@@ -31,13 +31,13 @@ def write_to_file(filename, contents):
 
 
 def process_pattern(line, pattern):
-    matches = re.findall(pattern, line):
+    matches = re.findall(pattern, line)
     if matches:
-        line = reformat_line(line)
+        line = reformat_line(line, matches)
     return line
 
 
-def reformat_line(line):
+def reformat_line(line, matches):
     print('   {}'.format(line))
     to_change = matches[0][0]
     line = line.replace(to_change, to_change.lower())
