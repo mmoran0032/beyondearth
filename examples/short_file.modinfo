@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9d9f64a8-9ab7-4551-ba0a-f118f7b14626" version="100">
+  <Properties>
+    <Name>Max Sponsors Increase</Name>
+    <Teaser>Removes the clamp which restricts the maximum number of sponsors to ten.</Teaser>
+    <Description>Removes the clamp which restricts the maximum number of sponsors to ten.</Description>
+    <Authors>Barathor</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4291171F520D362531265DB1A2E7795A" import="1">AdvancedSetup.lua</File>
+  </Files>
+</Mod>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="acf081f4-ff9d-47b6-bf6a-18b2ec2348ad" version="47">
+  <Properties>
+    <Name>Affinity As Yields - Vanilla</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Earn Affinity points from improvements and buildings, not from tech.</Teaser>
+    <Description>A fundamental change in the way affinities are levelled up. 
+
+Earn affinity points each turn, as yields from buildings and tile improvements, just like you'd earn culture or science.
+
+This version is for use *without* the Rising Tide DLC.</Description>
+    <Authors>HandyVac</Authors>
+    <SpecialThanks>Machiavelli, lilgamefreek</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="892aba20-4e98-4c4f-ac50-03d1173cd3d6" minversion="0" maxversion="999" title="Awesome Affinities And Delayed Victories" />
+    <Mod id="b07d32f7-6ee8-4eda-8441-60cfecc8f0ac" minversion="0" maxversion="999" title="ImprovedAffinity" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="7AAC2116711B4C2FDF8DDE4CB72F3D7D" import="1">Art/AAY_buildingatlas1024.dds</File>
+    <File md5="14EB2B2BCEC7F12A42A76F28037C0250" import="1">Art/AAY_buildingatlas360.dds</File>
+    <File md5="15B0544202955FE69DBDA8016B444E4B" import="1">Art/AAY_buildingatlas512.dds</File>
+    <File md5="05F9A649F25BA525EA4B35436EDD04D9" import="0">Art/AAY_IconAtlas.xml</File>
+    <File md5="2FD838D9C5347CEEAE7D06583CBE726D" import="1">Art/colorweb_AAY_buildingatlas360.dds</File>
+    <File md5="C36D519D08ABBC9F7170D69A69C4F538" import="0">Changelog.txt</File>
+    <File md5="26692A74FC914D362954FCD89DDFCC3A" import="0">Compatability/AwesomeAffinities_Compatability.xml</File>
+    <File md5="E767B0ABA9BFBD14C6EA09FA9FF90F66" import="0">Lua/Affinity_Yields_AI_Helper.lua</File>
+    <File md5="CFFA44FC5B3D3F6FB7A09AA4A2724AF7" import="1">Lua/Affinity_Yield_Utilities.lua</File>
+    <File md5="5A41ED1FD369FDEC1E25C9BD14D9D76A" import="0">Lua/Alien_Preserve_BuildingQuest_Effect.lua</File>
+    <File md5="5FB62CACCCC2EEB4FDA86E9B023EC464" import="0">Lua/Calculate_Affinity_Yields.lua</File>
+    <File md5="01ADBF9931765EE9408838F0F853D7A6" import="0">Lua/Sonic_Minefield_Building_Effect.lua</File>
+    <File md5="D87B74B450C5D6FFDE168393C84B8F2A" import="1">Lua/UI Overrides/CityView.lua</File>
+    <File md5="2B9F3BEBAAB281E49900D7165F8BEBE2" import="1">Lua/UI Overrides/CityView.xml</File>
+    <File md5="6694D371EFC9F9E933576FB9C498B23F" import="1">Lua/UI Overrides/InfoTooltipInclude.lua</File>
+    <File md5="C65E0C190931A7B99C9D9726E6FA1EAC" import="1">Lua/UI Overrides/PlotMouseoverInclude.lua</File>
+    <File md5="6641311AA29893726AB969B5A0811CCD" import="1">Lua/UI Overrides/ProductionPopup.lua</File>
+    <File md5="328B04DE1F30F525B155A4153C562375" import="1">Lua/UI Overrides/TechFilterFunctions.lua</File>
+    <File md5="B1113947843280BF46547655D1334045" import="1">Lua/UI Overrides/TopPanel.lua</File>
+    <File md5="C0047564AEB659713321B934ABAA8AE7" import="1">Lua/UI Overrides/UnitPanel.lua</File>
+    <File md5="D41787361644EFD2FA9D0E146F28D909" import="0">Shared/Modder Resource - Modular Building Quests (v2)/BuildingChoiceTemplateQuest.lua</File>
+    <File md5="456CA3F098A6E5FACC45B594997402B3" import="0">Shared/Modder Resource - Modular Building Quests (v2)/BuildingQuestTable.sql</File>
+    <File md5="6E48841E663E69DE573BE2BE6CC03FA8" import="0">Shared/Modder Resource - Modular Building Quests (v2)/README.txt</File>
+    <File md5="56618B694FA0B7DFF33F4E81150665BF" import="0">Shared/Policies Grant Perks (v2)/PGP_Table.xml</File>
+    <File md5="921E4B50EC498A248A0FCD80FC0A9467" import="0">Shared/Policies Grant Perks (v2)/Policies grant Perks.lua</File>
+    <File md5="AC4CE72A5A734AA57B3B86ECC7CDC03A" import="0">SQL/Change_AffinityLevels.sql</File>
+    <File md5="6E4BBC073FD0437B543D44F8169B0500" import="0">SQL/Create_New_Columns_In_Tables.sql</File>
+    <File md5="80F17CECE91872C92F277BDAAE670ED3" import="0">XML/Change_AI_Strategies.xml</File>
+    <File md5="21E067310020016E90321372F41F7E8A" import="0">XML/Change_Buildings.xml</File>
+    <File md5="1D3D14D21812F16CAEA94570EA511986" import="0">XML/Change_Improvements.xml</File>
+    <File md5="60DD4E99820B72F032007884AF2490B2" import="0">XML/Change_Late_Start_Effects.xml</File>
+    <File md5="AA8B5E1BF2963FAB36612D7DD0F0CE9B" import="0">XML/Change_PlayerPerks.xml</File>
+    <File md5="7EF8F1983B3CD2D0F08B1833E6DD92CC" import="0">XML/Change_Techs.xml</File>
+    <File md5="3DF3F170849FA7B76BF333D2F7B0E766" import="0">XML/Change_Units.xml</File>
+    <File md5="C87D1C9640C9766883899CDB069C3C1D" import="0">XML/Change_Virtues.xml</File>
+    <File md5="E23A82F2E7972D177ECC075960845EE9" import="0">XML/Create_New_Tables.xml</File>
+    <File md5="C1D7AF7E11FB63EEBC0771B0C9046411" import="0">XML/New_Building_Quests.xml</File>
+    <File md5="700AB5A19056C28AC6D2F0858EB24D07" import="0">XML/New_Texts.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Create_New_Tables.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/Create_New_Columns_In_Tables.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Change_AffinityLevels.sql</UpdateDatabase>
+      <UpdateDatabase>Shared/Modder Resource - Modular Building Quests (v2)/BuildingQuestTable.sql</UpdateDatabase>
+      <UpdateDatabase>Shared/Policies Grant Perks (v2)/PGP_Table.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_AI_Strategies.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Improvements.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Late_Start_Effects.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_PlayerPerks.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Techs.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Units.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Change_Virtues.xml</UpdateDatabase>
+      <UpdateDatabase>XML/New_Building_Quests.xml</UpdateDatabase>
+      <UpdateDatabase>XML/New_Texts.xml</UpdateDatabase>
+      <UpdateDatabase>Compatability/AwesomeAffinities_Compatability.xml</UpdateDatabase>
+      <UpdateDatabase>Art/AAY_IconAtlas.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Affinity_Yields_AI_Helper.lua">
+      <Name>AI Helper</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Alien_Preserve_BuildingQuest_Effect.lua">
+      <Name>Alien Preserve Quest Effect</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Calculate_Affinity_Yields.lua">
+      <Name>Calculate Affin Yields</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Sonic_Minefield_Building_Effect.lua">
+      <Name>Sonic Minefield Quest Effect</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="Quest" file="Shared/Modder Resource - Modular Building Quests (v2)/BuildingChoiceTemplateQuest.lua">
+      <Name>BuildingChoiceTemplateQuest</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Shared/Policies Grant Perks (v2)/Policies grant Perks.lua">
+      <Name>Policies Grant Perks</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

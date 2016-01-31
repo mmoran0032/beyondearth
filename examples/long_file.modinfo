@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e3e7ce4d-f6da-451c-912f-a8f4a194ba07" version="5">
+  <Properties>
+    <Name>Awesome Sponsors (Classic Version)</Name>
+    <Teaser>[[COLOR_WHITE]Classic[ENDCOLOR]] Makes sponsors more interesting and distinctive.</Teaser>
+    <Description>[COLOR_WHITE]A mod that is designed to make the Sponsors  more interesting and distinctive. 
+
+Additional bonuses have been added, existing bonuses have been changed and, in some cases, swapped to make all sponsors feel and play different from each other. Every Sponsor now has a unique Building that has higher yields and, in most cases, a unque effect. 
+
+To be clear: The main focus is not perfect balance - I try to get them somewhat on a level, but especially with all the combinations possible when also using Awesome Loadout etc. it's impossible to achieve perfect balance and still keep options interesting. Also, these bonuses will make the game easier - but, at least that's my opinion, also more fun.[ENDCOLOR]</Description>
+    <Authors>Ryika</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks>
+    <Mod id="0d476ca5-9deb-4771-997c-bc3c34ae0af3" minversion="0" maxversion="999" title="Awesome Sponsors (Rising Tide Version)" />
+    <Dlc id="54D2B257-C591-4045-8F17-A69F033166C7" minversion="0" maxversion="999" />
+  </Blocks>
+  <Files>
+    <File md5="87D83660FA435E4E857C5A56D3F57E4C" import="0">Changelog.txt</File>
+    <File md5="2F284C5C7C23BBA267406B73F7F8EDDB" import="0">XML/Buildings.xml</File>
+    <File md5="C819D6800756FED78D908C7F4EDDE65A" import="0">XML/Civilizations.xml</File>
+    <File md5="2E0ED17E1A6A417641C8905D3A2FA5AB" import="0">XML/PlayerPerks.xml</File>
+    <File md5="E3ADFF8658E4909EE324993082DC8653" import="0">XML/Promotions.xml</File>
+    <File md5="1FDC2BCF37EF5C8782571E7E4DA3BB3A" import="0">XML/Technologies.xml</File>
+    <File md5="3986E48C9AF182C89C137FFDC26AAC68" import="0">XML/Traits.xml</File>
+    <File md5="52FACB87496E62B51CD2AEF6C8738AC9" import="0">XML/TraitsTexts.xml</File>
+    <File md5="C886D3834AE4F33E365EB793B718B02A" import="0">XML/Unique Buildings/AfricanUnionThePeoplesLibrary.xml</File>
+    <File md5="557989093164F77224DF81CEE07E200A" import="0">XML/Unique Buildings/ARCCentralIntelligenceAgency.xml</File>
+    <File md5="87000EC9DA68373B24CD3979695C3784" import="0">XML/Unique Buildings/AwesomeUniqueBuilding.xml</File>
+    <File md5="14A30FD285A7326F0692A339849B7A42" import="0">XML/Unique Buildings/BrasiliaMilitaryIndustrialComplex.xml</File>
+    <File md5="C4A9BB7578BA6186A9D22BE4112A3DFD" import="0">XML/Unique Buildings/FrankoIberiaMuseum.xml</File>
+    <File md5="B40B2740FBDE76E4A7BC3FC29891E27F" import="1">XML/Unique Buildings/IconAtlases/colorweb_RyikaUniqueBuildingIcon_45.dds</File>
+    <File md5="FCFCBB2FC6A4100E0A85D784B291A6EB" import="0">XML/Unique Buildings/IconAtlases/IconAtlases.sql</File>
+    <File md5="F9909FC53A5E6A5DFC1590C4972B3F05" import="1">XML/Unique Buildings/IconAtlases/RyikaUniqueBuildingIcon_128.dds</File>
+    <File md5="7ABE1CFFD37B4B96A4AABD0295B1FC03" import="1">XML/Unique Buildings/IconAtlases/RyikaUniqueBuildingIcon_256.dds</File>
+    <File md5="97157C356326849E0CAF96C01F6A1DC8" import="1">XML/Unique Buildings/IconAtlases/RyikaUniqueBuildingIcon_45.dds</File>
+    <File md5="0A9B0A8902CAF5C965290CFEDEF1CE7E" import="1">XML/Unique Buildings/IconAtlases/RyikaUniqueBuildingIcon_64.dds</File>
+    <File md5="3FE9D9DBA743040D36B4BB82933F8066" import="1">XML/Unique Buildings/IconAtlases/RyikaUniqueBuildingIcon_80.dds</File>
+    <File md5="03C3A9E415F82D60A3CA56792279ED41" import="0">XML/Unique Buildings/KavithanHolySite.xml</File>
+    <File md5="4A25E16E57FD3D5CB772A9556684C0C7" import="0">XML/Unique Buildings/PolystraliaTradeEstate.xml</File>
+    <File md5="CB219EB9340230DF29B0CD46FF300BCD" import="0">XML/Unique Buildings/SlavicFederationSpaceAgency.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/PlayerPerks.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Traits.xml</UpdateDatabase>
+      <UpdateDatabase>XML/TraitsTexts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Civilizations.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Technologies.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Promotions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/IconAtlases/IconAtlases.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/PolystraliaTradeEstate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/ARCCentralIntelligenceAgency.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/BrasiliaMilitaryIndustrialComplex.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/AfricanUnionThePeoplesLibrary.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/SlavicFederationSpaceAgency.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/KavithanHolySite.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/FrankoIberiaMuseum.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unique Buildings/AwesomeUniqueBuilding.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
