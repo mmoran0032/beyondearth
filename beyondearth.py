@@ -6,9 +6,9 @@ import os
 import re
 import subprocess
 
-filetag = '>((\d|\w|/|_)+\.\w+)<'
+filetag = '>((\d|\w|/|_|\s|\(|\)|-)+\.\w+)<'
 tagpattern = re.compile(filetag)
-fileattr = 'file="((\d|\w|/|_)+\.\w+)"'
+fileattr = 'file="((\d|\w|/|_|\s|\(|\)|-)+\.\w+)"'
 attrpattern = re.compile(fileattr)
 
 
